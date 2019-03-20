@@ -1,0 +1,25 @@
+Homework:  #2
+Student:   Jacob Engel
+GitHub ID: jbe2
+
+Points: 24/100
+
+Remarks:
+- Your makefile does not work.
+- There is an error in line 400.
+- Even after compiling it manually, your code crashed for any parameter combination I tested.
+- The report is missing.
+
+[x] Working finite difference discretization of Poisson's problem (15 pts.)
+    - Looks okay, but cannot be tested because the code is not working. (-3 pts.)
+[x] Working implementation of at least one solver (15 pts.)
+    - Looks okay, but cannot be tested because the code is not working. (-3 pts.)
+[ ] Code works correctly when using multiple MPI ranks (20 pts.)
+    - Cannot be tested 
+[ ] In addition to being correct, the code never stores full copies of matrices, vectors, etc. on any single process (10 pts.)
+    - Rank #0 does keep full copies.
+[ ] Diagram describing the partition of the grid (10 pts.)
+[ ] Description of the algorithm in pseudo-code (10 pts.)
+[ ] Description of debugging strategies (optional)
+[ ] Testing of the code (20 pts.)
+[ ] Scalability (bonus, 5 pts.)
