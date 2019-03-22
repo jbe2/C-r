@@ -1,0 +1,26 @@
+Homework:  #3
+Student:   Jacob Engel
+GitHub ID: jbe2
+
+Points: 75/100
+
+General remarks:
+- Your makefile does not work.
+
+[x] Working finite difference discretization of Poisson's problem (10 pts.)
+[x] Working implementation of at least one solver (10 pts.)
+[ ] Code uses OpenMP for parallelism (10 pts.)
+    - Your code is not parallel. (-10 pts.)
+      This is because the "collapse" clause must go with an "#pragma omp for." In your case, it is simply ignored. If you enable compiler warnings (-Wall), the compiler will tell you this:
+        HMW3.cpp:35:0: warning: ignoring #pragma omp collapse [-Wunknown-pragmas]
+    - Notice that loops inside OpenMP regions are not automatically parallelized. You still need to add "#pragma omp for."
+[ ] Parallel code is correct and free of race conditions (10 pts.)
+    - Code is not parallel (see above). (-10 pts.)
+[x] Discussion of OpenMP directives and their use (15 pts.)
+    - OpenMP directives are explained, but the "collapse" directive is used incorrectly, and the loops are not parallelized (see above). (-5 pts.)
+[x] Discussion of code verification (15 pts.)
+[ ] Plots of measured parallel performance and speedups (20 pts.)
+    - Plot is missing. (-5 pts.)
+    - Please show speedups, not just elapsed time. I am not taking off points here because speedups would not be meaningful, since the code is not parallel.
+[x] Discussion of performance results (10 pts.)
+    - For the large problem, the effect of using more threads should be the most significant, but in your case it is least significant. If you had repeated the experiments to get an average, you would have noticed that the times are indeed exactly the same and that your code is not parallel.
