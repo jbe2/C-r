@@ -1,0 +1,15 @@
+8/20 points: code compiles and runs
+- code does not run past one iteration.
+
+11/15 points: good code practices
+- using (N+2)x(N+2) threads instead of NxN threads.
+ 
+15/15 points: discussion of parallelization strategy 
+
+10/15 points: discussion of code verification
+- Iteration count mentioned but not reported.  Error comparison?
+
+15/30 points: provide throughput and bandwidth, roofline and computational discussion
+- FLOP counts likely highly inaccurate since code does not run
+
+Total: 65/100
