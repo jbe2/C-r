@@ -1,0 +1,28 @@
+Homework:  #5
+Student:   Jacob Engel
+GitHub ID: jbe2
+
+Points: 77/100
+
+General remarks:
+- Please make sure that you understand the difference between a Jacobi iteration and a Jacobian.
+  One is an iterative solver, the other is the derivative of a function in multiple variables.
+
+[x] Correct finite difference discretization of Poisson's problem (5 pts.)
+[x] Correct algorithm for Jacobi solver (5 pts.)
+[x] Working OpenCL implementation (20 pts.)
+[ ] Verification of OpenCL code based on errors (10 pts.)
+    - Verification is missing. Please report errors and compare to other codes. (-15 pts.)
+    - Note that your code does not compute the true error, since you do not read the solution back to host memory after calling the solver.
+[ ] Comparison of errors to serial code (10 pts.)
+[ ] Comparison of errors to GPU code (10 pts.)
+[x] Runtimes for OpenCL code (10 pts.)
+    - You measure the times for *one* iteration, i.e., you should not divide by the number of iterations again.
+      This is the reason why the time per iteration decreases when you increase the problem size.
+[x] Runtimes for CPU code (10 pts.)
+[x] Runtimes for GPU code (10 pts.)
+    - The reduced number of iterations with increasing problem size clearly indicates a problem.
+      The CUDA code from the website does not exhibit this behavior.
+      In any case, please do not leave such an extreme difference in the results uncommented. (-5 pts.)
+[x] Discussion of results (10 pts.)
+    - Please compare the results obtained on the GPU with CUDA and OpenCL. (-3 pts.)
